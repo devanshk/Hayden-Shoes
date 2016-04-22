@@ -28,95 +28,45 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     color: #fff;
 }
 
-/*Tile Styling*/
-.tile{
-    background-color: #eee;
-    width:94%;
-    height:60%;
-    margin:0px;
-    left:0;
-    right:0;
-    padding-left: 3%;
-    padding-right: 3%;
+/*Hero Launchpage Styling*/
+#tile1 h1{
+    color: white;
+    font-family: 'Keep Calm';
+    font-size: 4vw;
+    text-align: center;
+    padding-top: 40vh;
+    -ms-transform: skewY(-5deg); /* IE 9 */
+    -webkit-transform: skewY(-5deg); /* Safari */
+    transform: skewY(-5deg); /* Standard syntax */
 }
 
-.tile img{
-    height:60%;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+/* Shopping Card Sidebar Styling */
+#cart_sidebar{
+    height:100%;
+    width:30%;
+    background: #eee;
+    position:fixed;
+    right: -30%;
+    top: 0px;
+    z-index: 13;
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
 }
 
-.tile h1{
+#cart_sidebar h1{
     font-family: 'Proxima Nova';
-    font-size: 400%;
-    color: #2e2e2e;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-top: 30px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #333333;
+    margin-top: 15%;
 }
-
-.tile p{
-    width: 55%;
-    font-size: 1.7vw;
+#cancel{
+    position:absolute;
+    right: 7%;
+    top:0.8%;
+    font-size: 3em;
     font-family: 'Proxima Nova';
-}
-
-.tile:nth-child(even) img{
-    -webkit-clip-path: polygon(55% 0, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(55% 0, 100% 0, 100% 100%, 0% 100%);
-    float:right;
-    position:absolute;
-    right:0;
-}
-
-.tile:nth-child(odd) img{
-    -webkit-clip-path: polygon(0% 0, 45% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(55% 0, 100% 0, 100% 100%, 0% 100%);
-    float:left;
-    position:absolute;
-    left:0;
-}
-
-.tile:nth-child(even) h1{
-    float:left;
-}
-
-.tile:nth-child(even) p{
-    float:left;
-    margin-right: 55%;
-}
-
-.tile:nth-child(even) .button{
-    float:left;
-}
-
-.tile:nth-child(odd) h1{
-    float:right;
-    text-align: right;
-}
-
-.tile:nth-child(odd) p{
-    float:right;
-    margin-left: 55%;
-    text-align: right;
-}
-
-.tile:nth-child(odd) .button{
-    float:right;
-}
-
-/* Specific Tile Styles */
-
-#the_charity a:not(.button){
-    -webkit-transition: all 0.3s ease; /* Safari */
-    transition: all 0.3s ease;
-    color: #bfa71f;
-    text-decoration: none;
-    
-}
-
-#the_charity a:not(.button):hover{
-    color: #dbc024;
+    color: #333333;
 }
 
 /*NavBar Styling*/
@@ -227,8 +177,11 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     bottom: 0;
     right: 0;
     background-color: black;
-    z-index: 0;
-    opacity: 0.8;
+    z-index: 11;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
 }
 
 #logo{
@@ -320,6 +273,14 @@ hr{
 }
 
 /* Bonus Utility Classes */
+.hr{
+    width: 80%;
+    height: 1px;
+    background-color: #919191;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .zoomimg {
     display: inline-block;
     width: 250px;

@@ -16,7 +16,6 @@
     </head>
 
     <body>
-        
         <!--Here's the navbar-->
         <div id="header_wrapper">
             <center>
@@ -26,22 +25,25 @@
                         <li><a href="women.html">WOMEN</a></li>
                         <li><a class="logo" href="index.html"></a></li>
                         <li><a href="mission.html">MISSION</a></li>
-                        <li><a id="nav_cart">CART</a></li>
+                        <li><a id="nav_cart" onclick="toggleCart();">CART</a></li>
                     </ul>
                 </div>
             </center>
         </div>
         
         <video id="vid" muted autoplay loop src="videos/Toms_Trimmed.mp4"></video>
-        
         <div id="tile1" style="width:100%; height:100%;">
-            
-            <center>
-                <h1> </h1>
-            </center>
-            
             <p id="countup">WE'VE DONATED  <b>235</b>  SHOES</p>
-            
+            <h1>CHARITY DOESN'T <br> MEAN LOW QUALITY</h1>
         </div>
+        
+        <div id="cart_sidebar">
+            <div id="cancel" onclick="toggleCart();">x</div>
+            <h1>SHOPPING CART</h1>
+            <div class="hr"></div>
+            <div id="items"></div>
+        </div>
+        <div id="darkness" onclick="toggleCart();"></div>
+        
     </body>
 </html>

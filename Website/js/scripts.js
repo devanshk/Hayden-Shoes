@@ -34,6 +34,20 @@ function countup(yr,m,d,hr,min){
     
     $("#countup b").html(numberWithCommas(shoes));
     
-    //Run the countdown function again. Recursion ftw.
+    //Run the countup function again. Recursion ftw.
     setTimeout("countup(theyear,themonth,theday,thehour,theminute)",1000);
+}
+
+function toggleCart(){
+    var opac = $("#darkness").css("opacity");
+    if (opac == 0){
+        $("#darkness").css("visibility", "visible");
+        $("#darkness").css("opacity", 0.8);
+        $("#cart_sidebar").css("right", 0);
+    }
+    else{
+        $("#darkness").css("opacity", 0);
+        $("#cart_sidebar").css("right", '-30%');
+        setTimeout('$("#darkness").css("visibility", "hidden");', 500);
+    }
 }
