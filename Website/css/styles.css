@@ -124,7 +124,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     width:100%;
     position:absolute;
     z-index:10;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), rgba(0,0,0,0)); /* Standard syntax */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3), rgba(0,0,0,0));  /*Standard syntax */
 }
 
 #header {
