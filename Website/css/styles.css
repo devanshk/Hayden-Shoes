@@ -12,19 +12,24 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 /* Button */
 .button{
     border-radius: 0px;
-    background:transparent;
     font-size: 1em;
     font-family: 'Proxima Nova';
     border: solid 1px #2e2e2e;
-    padding:8px 25px;
-    -webkit-transition: all 0.3s; /* Safari */
-    transition: all 0.3s;
-    color: #2e2e2e;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+    color: #eee;
+    background-color: #2e2e2e;
     text-decoration: none;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
 }
 
 .button:hover{
-    background: #2e2e2e;
+    background: #fa0865;
     color: #fff;
 }
 
@@ -32,7 +37,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 #tile1 h1{
     color: white;
     font-family: 'Keep Calm';
-    font-size: 4vw;
+    font-size: 5vw;
     text-align: center;
     padding-top: 40vh;
     -ms-transform: skewY(-5deg); /* IE 9 */
@@ -41,6 +46,17 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 }
 
 /* Shopping Card Sidebar Styling */
+#items{
+    overflow-y: scroll;
+    height:100%;
+}
+
+#filler{
+    height: 30px;
+    width:100%;
+    float:left;
+}
+
 #cart_sidebar{
     height:100%;
     width:30%;
@@ -67,6 +83,35 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     font-size: 3em;
     font-family: 'Proxima Nova';
     color: #333333;
+}
+
+#shoe {
+    width: 80%;
+    padding-left: 10%;
+    padding-right:10%;
+    float:left;
+    margin-bottom: 7%;
+}
+
+#shoe img{
+    width: 40%;
+    margin-top: 5%;
+    float:left;
+}
+
+#shoe h1{
+    width:40%;
+    float:left;
+    margin-left: 5%;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+#shoe p{
+    width:40%;
+    float:left;
+    margin-left: 5%;
+    font-family: 'Proxima Nova'
 }
 
 /*NavBar Styling*/
@@ -227,42 +272,6 @@ body{
     filter: brightness(20%);
 }
 
-.unit{
-    width:14%;
-    float:left;
-    text-align: right;
-    font-family: 'Suranna', serif;
-    font-size: 80px;
-    font-weight: normal;
-    color: #bca67d;
-}
-
-.unit p{
-    font-family: 'Helvetica';
-    font-size: 20px;
-    font-weight: 400;
-    color: white;
-    opacity: .4;
-    text-align: left;
-    margin-top: 10px;
-}
-
-.filler{
-    color:transparent;
-}
-#line1{
-    /*First Line Stuff Here*/
-}
-#line2{
-    opacity: 0.6;
-}
-#bar{
-    margin-top: -40px;
-}
-#days, #minutes, #hours, #seconds{
-    opacity: .9;
-}
-
 hr{
     background-color: #9f8b66;
     float:left;
@@ -276,7 +285,7 @@ hr{
 .hr{
     width: 80%;
     height: 1px;
-    background-color: #919191;
+    background-color: #bcbcbc;
     margin-left: 10%;
     margin-right: 10%;
 }
