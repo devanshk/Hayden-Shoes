@@ -128,6 +128,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 #header_wrapper {
     width:100%;
     position:absolute;
+    left:7%;
     z-index:10;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3), rgba(0,0,0,0));  /*Standard syntax */
 }
@@ -186,10 +187,13 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     filter: hue-rotate(50%);
     z-index:0;
 }
+
 #charity_header img{
     width: 100%;
 }
-#cover_ellipse{
+
+#cover_ellipse
+{
     width:100%;
     height:100%;
     background-color: #eee;
@@ -199,18 +203,21 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     margin-top: 15%;
 }
 
-.clearfix {
+.clearfix 
+{
   *zoom: 1;
 }
 
-.clearfix:after {
+.clearfix:after 
+{
      content: "";
   clear: both;
   display: table;
 }
 /*End Navbar Stying*/
 
-#cover{
+#cover
+{
     width:100%;
     height:100%;
     position: absolute;
@@ -223,7 +230,8 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     opacity: 1;
 }
 
-#darkness{
+#darkness
+{
     width:100%;
     height:100%;
     position: absolute;
@@ -239,7 +247,8 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     transition: all 0.5s;
 }
 
-#logo{
+#logo
+{
     height: auto;
     width: 50%;
     padding-top: 10%;
@@ -247,7 +256,8 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     z-index: 10;
 }
 
-body{
+body
+{
     background-color: #141414;
     background: /*url(images/bg_min.jpg);*/
 /*    background-repeat: repeat;*/
@@ -256,7 +266,8 @@ body{
     margin:0px;
 }
 
-#countup{
+#countup
+{
     color: #e3e3e3;
     font-family: 'Keep Calm';
     font-size: 2em;
@@ -265,13 +276,15 @@ body{
     bottom: 5%;
     text-align: center;
 }
-#countup b{
+#countup b
+{
     font-size: 2.25em;
     color: #fa0865;
     font-weight: 400;
 }
 
-#vid{
+#vid
+{
     position: fixed;
     left:0;
     top:0;
@@ -292,7 +305,8 @@ hr{
 }
 
 /* Bonus Utility Classes */
-.hr{
+.hr
+{
     width: 80%;
     height: 1px;
     background-color: #bcbcbc;
@@ -300,13 +314,16 @@ hr{
     margin-right: 10%;
 }
 
-.zoomimg {
+.zoomimg 
+{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
     transition: all .5s ease;
 }
-.zoomimg:hover {
+
+.zoomimg:hover 
+{
     cursor: pointer;
     background-size: 150% 150%;
 }
