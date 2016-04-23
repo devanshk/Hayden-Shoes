@@ -103,6 +103,7 @@ function updateCart(){
         
         out += '<div id="shoe">\n<div class="hr"></div>\n<img src="'+imageSrc+'">\n<h1>'+name+'</h1>\n<p>Quantity: '+quantity+'</p>\n</div>';
         
+        out += '<div id="filler"> <img src="images/shoe1.jpg" style="opacity:0;"> </div>'
         out += '<div class="button" onclick="emptyCart();">Checkout</div>';
                     
         $("#items").html(out);
