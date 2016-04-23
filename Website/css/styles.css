@@ -278,8 +278,8 @@ body{
     min-width: 100%;
     min-height: 100%;
     z-index: -100;
-    -webkit-filter: brightness(20%);
-    filter: brightness(20%);
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%);
 }
 
 hr{
