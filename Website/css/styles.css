@@ -14,9 +14,8 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     border-radius: 0px;
     font-size: 1em;
     font-family: 'Proxima Nova';
-    border: solid 1px #2e2e2e;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 7%;
+    padding-bottom: 7%;
     -webkit-transition: all 0.5s; /* Safari */
     transition: all 0.5s;
     color: #eee;
@@ -43,6 +42,17 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     -ms-transform: skewY(-5deg); /* IE 9 */
     -webkit-transform: skewY(-5deg); /* Safari */
     transform: skewY(-5deg); /* Standard syntax */
+}
+
+/* Mens Selection Styling */
+#shopping{
+    position:absolute;
+    top: 14%;
+}
+#shopping img{
+    float:left;
+    width:22%;
+    margin-left: 2%;
 }
 
 /* Shopping Card Sidebar Styling */
@@ -291,10 +301,6 @@ hr{
 }
 
 .zoomimg {
-    display: inline-block;
-    width: 250px;
-    height: 375px;
-    padding: 0px 5px 0px 5px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
