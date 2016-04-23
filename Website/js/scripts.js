@@ -50,7 +50,7 @@ function toggleCart(){
     else{
         $("#darkness").css("opacity", 0);
         $("#cart_sidebar").css("right", '-30%');
-        setTimeout('$("#darkness").css("visibility", "hidden");', 500);
+        setTimeout('$("#darkness").css("visibility", "hidden");', 200);
     }
 }
 
