@@ -9,6 +9,38 @@ font-family: 'Proxima Nova';
 src: url("Proxima_Nova_Regular.otf") format("opentype");
 }
 
+/* Shop Styling */
+#left{
+    width:50%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: aqua;
+    float:left;
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+}
+#right{
+    width:50%;
+    height:100%;
+    position:fixed;
+    top:0;
+    right:0;
+    background-color: blue;
+    float:left;
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+}
+
+#shopping h1{
+    margin-top:90%;
+    text-align: center;
+    font-family: 'Proxima Nova';
+    font-size: 400%;
+    color: #fa0865;
+}
+
 /* Button */
 .button{
     border-radius: 0px;
@@ -64,6 +96,29 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 #items{
     overflow-y: scroll;
     height:100%;
+}
+
+#items #explore_store{
+    width:30%;
+    font-family: 'Proxima Nova';
+    margin-top: 10%;
+}
+
+#items a{
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+.underline_btn
+{
+    width: 80%;
+    height: 1px;
+    background-color: #1d1d1d;
+    margin-top: 4px;
+    margin-left: 10%;
+    margin-right: 10%;
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
 }
 
 #filler{
@@ -133,9 +188,20 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 #header_wrapper {
     width:100%;
     position:absolute;
-    left:7%;
+    padding-left:7%;
     z-index:10;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3), rgba(0,0,0,0));  /*Standard syntax */
+}
+
+#header_backing {
+    height:11%;
+    width:100%;
+    position:absolute;
+    margin-top: 0%;
+    padding-left:7%;
+    padding-bottom: 20px;
+    z-index:10;
+    background: #eee;
 }
 
 #header {
@@ -185,6 +251,19 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     padding: 0;
 }
 
+#header ul li a.logo_black {
+    background: url(images/logo_black.svg);
+    background-repeat:no-repeat;
+    background-size: contain;
+    height:100px;
+    display:block;
+    width:100px;
+    margin-top:-41px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+}
+
 #charity_header{
     height:50%;
     -webkit-filter: grayscale(60%);
@@ -215,9 +294,30 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 
 .clearfix:after 
 {
-     content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#nav_cart{
+    position: absolute;
+    right:10%;
+    width:%;
+}
+#nav_cart #first{
+    float:left;
+    margin-right: 10px;
+    padding-top: 10px;;
+}
+#nav_cart #second{
+    margin-left: 0px;
+    background-color: transparent;
+    border-radius: 100%;
+    border: solid 1px white;
+    width: 20px;
+    height: 20px;
+    padding:10px;
+    float:left;
 }
 /*End Navbar Stying*/
 
@@ -296,8 +396,8 @@ body
     min-width: 100%;
     min-height: 100%;
     z-index: -100;
-    -webkit-filter: brightness(80%);
-    filter: brightness(80%);
+    -webkit-filter: brightness(55%);
+    filter: brightness(55%);
 }
 
 hr{

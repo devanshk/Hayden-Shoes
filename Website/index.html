@@ -10,6 +10,7 @@
         <script type="text/javascript">
         $(function(){
             countup(year,month,day,hour,minute);
+            updateCart();
         });
         </script>
         
@@ -23,7 +24,7 @@
                     <li><a href="shop.html">SHOP</a></li>
                     <li><a class="logo" href="index.html"></a></li>
                     <li><a href="mission.html">MISSION</a></li>
-                    <!-- <li><a id="nav_cart" href="#" onclick="toggleCart();">CART</a></li> -->
+                    <li><a id="nav_cart" href="#" onclick="toggleCart();"><div id="first">CART</div><div id="second">5</div></a></li> 
                 </ul>
             </div>
         </div>
@@ -39,46 +40,18 @@
             <h1>SHOPPING CART</h1>
             <div id="items">
                 
-                <div id="shoe">
-                    <div class="hr"></div>
-                    <img src="images/shoe1.jpg">
-                    <h1>The Original</h1>
-                    <p>Quantity: 2</p>
-                </div>
-
-                <div id="shoe">
-                    <div class="hr"></div>
-                    <img src="images/shoe2.jpg">
-                    <h1>The Contemporary</h1>
-                    <p>Quantity: 3</p>
-                </div>
-                
-                <div id="shoe">
-                    <div class="hr"></div>
-                    <img src="images/shoe3.jpg">
-                    <h1>The Kickback</h1>
-                    <p>Quantity: 1</p>
-                </div>
-                
-                <div id="shoe">
-                    <div class="hr"></div>
-                    <img src="images/shoe4.jpg">
-                    <h1>The Orange</h1>
-                    <p>Quantity: 1</p>
-                </div>
-                
-                <div id="shoe">
-                    <div class="hr"></div>
-                    <img src="images/shoe1.jpg">
-                    <h1>The Original</h1>
-                    <p>Quantity: 2</p>
-                </div>
+                <center>
+                    <div id="explore_store" onmouseover="$('.underline_btn').css('width', '50%');" onmouseout="$('.underline_btn').css('width', '80%');">
+                        <a href="shop.html">Explore<br>The Store</a>
+                        <div class="underline_btn"></div>
+                     </div>
+                </center>
                 
                 <div id="filler">
                     <img src="images/shoe1.jpg" style="opacity:0;">
                 </div>
                 
-                <div class="button">Checkout</div>
+                <div class="button" onclick="emptyCart();">Checkout</div>
                 
             </div>
         </div>

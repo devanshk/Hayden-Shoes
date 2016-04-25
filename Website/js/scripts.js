@@ -82,6 +82,8 @@ function updateCart(){
         $("#items").html('<div class="button" onclick="emptyCart();">Checkout</div>');
         console.log("surprise! trap 0");
     }
+    var itemCount = parseInt(cartStore.substr(0,1));
+    $("#nav_cart #second").html(itemCount);
     cartStore = cartStore.substr(1, cartStore.length-1);
     console.log("trap 1 is\n"+cartStore);
     
