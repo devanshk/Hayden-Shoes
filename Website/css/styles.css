@@ -199,7 +199,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     text-align: center;
     font-size: 1.5em;
     color: #333333;
-    margin-top: 7vh;
+    margin-top: 2.5vh;
 }
 #cancel{
     position:absolute;
@@ -208,6 +208,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     font-size: 3em;
     font-family: 'Proxima Nova';
     color: #333333;
+    visibility: hidden;
 }
 
 #shoe {
@@ -532,4 +533,28 @@ hr{
 {
     cursor: pointer;
     background-size: 150% 150%;
+}
+
+
+/* Mobile Responsive Media Queries */
+
+@media only screen and (max-width: 768px) {
+    #shopping [id^="unit"]{
+        width: 42.5vw;
+        height: 42.5vw;
+        margin-bottom: 40px;
+        overflow: visible;
+    }
+    
+    #cart_sidebar img{
+        width:100%;
+    }
+    
+    #shoe h1{
+        width:100%;
+    }
+    
+    #shoe p{
+        width:100%;
+    }
 }

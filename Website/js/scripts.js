@@ -58,7 +58,7 @@ function switchToShoes(){
 function switchToOther(){
     objects = [new item("Coral Hat", 17, 'images/hat1.jpg'),
                new item("Gray T", 10, 'images/shirt1.jpg'),
-               new item("Bold White T", 12, 'images/shirt2.jpg'),
+               new item("White T", 12, 'images/shirt2.jpg'),
                new item("Heather T", 15, 'images/shirt3.jpg'),
                new item("Sticker 1", 5, 'images/stick1.jpg'),
                new item("Sticker 2", 5, 'images/stick2.jpg'),
