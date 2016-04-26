@@ -430,7 +430,7 @@ hr{
 }
 
 .mission {
-    vertical-align: center;
+    /*vertical-align: center;*/
     margin:auto;
     height:62vh;
     width:80vh;
@@ -440,7 +440,7 @@ hr{
     left:50%;
     margin-top:-31vh;
     margin-left:-40vh;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
     text-align:center;
     font-family:"Proxima Nova";
     padding-left:15px;
@@ -449,6 +449,17 @@ hr{
 
 .mission-body{
     color:white;
+}
+
+.chatbox{
+    position:absolute;
+    right:0;
+    bottom:0;
+}
+
+.chatbox img{
+    width:60px;
+    height:auto;
 }
 
 /* Bonus Utility Classes */
