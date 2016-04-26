@@ -18,7 +18,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     position:fixed;
     top:0;
     left:0;
-    background-color: aqua;
+    background-color: #222222;
     background-image: url(images/store_shoes.jpg);
     float:left;
     -webkit-transition: all 0.5s; /* Safari */
@@ -31,7 +31,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     position:fixed;
     top:0;
     right:0;
-    background-color: blue;
+    background-color: #222222;
     background-image: url(images/store_other.jpg);
     background-position: right;
     float:left;
@@ -358,7 +358,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 #nav_cart{
     position: absolute;
     right:10%;
-    width:%;
+    margin-top: -10px;
 }
 #nav_cart #first{
     float:left;
@@ -374,6 +374,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     height: 20px;
     padding:10px;
     float:left;
+    margin-top: -2px;
 }
 /*End Navbar Stying*/
 
@@ -538,7 +539,7 @@ hr{
 
 /* Mobile Responsive Media Queries */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     #shopping [id^="unit"]{
         width: 42.5vw;
         height: 42.5vw;
@@ -557,4 +558,17 @@ hr{
     #shoe p{
         width:100%;
     }
+    
+    #header a {
+        font-size: 1.7em;
+    }
+    
+    #nav_cart #first{
+        font-size: 1em;
+    }
+    #nav_cart #second{
+        line-height: 20px;
+        margin-top: 5px;
+    }
+    
 }
