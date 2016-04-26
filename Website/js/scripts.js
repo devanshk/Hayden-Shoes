@@ -120,12 +120,11 @@ function saveShoe(name, imgSrc, qty, price){
     cartStore = itemCount + cartStore.substr(1,cartStore.length-1);
     cartStore += name+","+imgSrc+","+qty+","+price+"-";
     localStorage.setItem("cart",cartStore);
-    // $("#nav_cart").css("color", "#fa0865");
+    $("#nav_cart").css("color", "#fa0865");
     // $("#nav_cart").css("font-size", "20px");
-    // $("#nav_cart #second").css("padding", "10px");
-    // setTimeout('$("#nav_cart").css("color", "black");', 400);
-    // setTimeout('$("#nav_cart").css("font-size", "16px");', 400);
     $("#nav_cart").css("margin-top", "-20px");
+    setTimeout('$("#nav_cart").css("color", "black");', 400);
+    // setTimeout('$("#nav_cart").css("font-size", "16px");', 400);
     setTimeout('$("#nav_cart").css("margin-top", "-10px");', 400);
     updateCart();
 }
