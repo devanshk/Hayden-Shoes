@@ -188,7 +188,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 #header_wrapper {
     width:100%;
     position:absolute;
-    padding-left:7%;
+    padding-left:8%;
     z-index:10;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3), rgba(0,0,0,0));  /*Standard syntax */
 }
@@ -198,7 +198,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     width:100%;
     position:absolute;
     margin-top: 0%;
-    padding-left:7%;
+    padding-left:8%;
     padding-bottom: 20px;
     z-index:10;
     background: #eee;
@@ -432,13 +432,13 @@ hr{
 .mission {
     vertical-align: center;
     margin:auto;
-    height:50vh;
+    height:62vh;
     width:80vh;
     border:1px solid white;
     position:absolute;
-    top:50%;
+    top:54%;
     left:50%;
-    margin-top:-25vh;
+    margin-top:-31vh;
     margin-left:-40vh;
     background-color: rgba(0,0,0,0.5);
     text-align:center;
