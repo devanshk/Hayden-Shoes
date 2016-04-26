@@ -1,4 +1,4 @@
-/* Using #fa0865 as the highlight color
+/* Using #fa0865 as the highlight color */
 
 @font-face {
   font-family: 'Keep Calm';
@@ -131,7 +131,6 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     padding-bottom:5px;
     margin: 0;
     font-size: 1.4em;
-    z-index: 99999;
     background: #fa0865;
     color:white;
     font-weight: 100;
@@ -480,7 +479,7 @@ hr{
 }
 
 .mission {
-    /*vertical-align: center;*/
+/*    vertical-align: center;*/
     margin:auto;
     height:62vh;
     width:80vh;
@@ -502,11 +501,10 @@ hr{
 }
 
 .chatbox{
-    position:absolute;
+    position: absolute;
     right:0;
     bottom:0;
 }
-
 .chatbox img{
     width:60px;
     height:auto;

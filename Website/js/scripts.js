@@ -7,6 +7,7 @@ var tz=-5; //Offset from UTC
 var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
 
 var objects;
+var out;
 
 function numberWithCommas(x){ //Add commas as thousands seperators
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
@@ -45,6 +46,8 @@ function switchToShoes(){
                    new item("The Suburban", 50, 'images/shoe3.jpg'),
                    new item("The Orange", 50, 'images/shoe4.jpg')];
     
+    out = "<div style=\" font-family:'Proxima Nova'; font-size: 3em; text-align:center;\">Our shoes are one size fits all.</div>";
+    
     $('#left').css('width','100%');
     $('#right').css('width','0%');
     setTimeout('$("#shopping").css(\'opacity\', \'0\');', 500);
@@ -53,11 +56,15 @@ function switchToShoes(){
 }
 
 function switchToOther(){
-    objects = [new item("Classic T", 50, 'images/shoe1.jpg'),
-                   new item("The Contemporary", 50, 'images/shoe2.jpg'),
-                   new item("The Suburban", 50, 'images/shoe3.jpg'),
-                   new item("The Orange", 50, 'images/shoe4.jpg')];
+    objects = [new item("Coral Hat", 17, 'images/hat1.jpg'),
+               new item("Gray T", 10, 'images/shirt1.jpg'),
+               new item("Bold White T", 12, 'images/shirt2.jpg'),
+               new item("Heather T", 15, 'images/shirt3.jpg'),
+               new item("Sticker 1", 5, 'images/stick1.jpg'),
+               new item("Sticker 2", 5, 'images/stick2.jpg'),
+               new item("Sticker 3", 5, 'images/stick3.jpg')];
     
+    out="";
     $('#left').css('width','0%');
     $('#right').css('width','100%');
     setTimeout('$("#shopping").css(\'opacity\', \'0\');', 500);
@@ -72,11 +79,10 @@ function item(name, price, imageRef){
 }
 
 function generateShopItems(){
-    var out = "<div style=\" font-family:'Proxima Nova'; font-size: 3em; text-align:center;\">Our shoes are one size fits all.</div>";
     for (var i=0; i<objects.length; i++){
         var cur = objects[i];
         var name = 'unit'+i;
-        out += '<div id="'+name+'" onmouseover="$(\'#'+name+' h1\').css(\'bottom\',\'0\'); " onmouseout="$(\'#'+name+' h1\').css(\'bottom\',\'-40px\');" onclick="saveShoe(\''+cur.name+'\', \''+cur.imageRef+'\', 2,'+cur.price+');" ><h1>Add to Cart $'+cur.price+'</h1> <img src="'+cur.imageRef+'"> </div>'
+        out += '<div id="'+name+'" onmouseover="$(\'#'+name+' h1\').css(\'bottom\',\'0\'); " onmouseout="$(\'#'+name+' h1\').css(\'bottom\',\'-40px\');" onclick="saveShoe(\''+cur.name+'\', \''+cur.imageRef+'\', 1,'+cur.price+');" ><h1>Add to Cart $'+cur.price+'</h1> <img src="'+cur.imageRef+'"> </div>'
     }
     
     $("#shopping").html(out);
