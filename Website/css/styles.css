@@ -483,23 +483,24 @@ hr{
 .mission {
 /*    vertical-align: center;*/
     margin:auto;
-    height:450px;
-    width:550px;
+    width:80vh;
     border:1px solid white;
     position:absolute;
     top:54%;
     left:50%;
-    margin-top:-225px;
-    margin-left:-275px;
+    margin-top:-31vh;
+    margin-left:-40vh;
     background-color: rgba(0,0,0,0.7);
     text-align:center;
     font-family:"Proxima Nova";
     padding-left:15px;
     padding-right:15px;
+    padding-bottom: 15px;
 }
 
 .mission-body{
     color:white;
+    overflow-x:hidden;
 }
 
 .chatbox{
@@ -539,7 +540,7 @@ hr{
 
 /* Mobile Responsive Media Queries */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
     #shopping [id^="unit"]{
         width: 42.5vw;
         height: 42.5vw;
@@ -569,6 +570,13 @@ hr{
     #nav_cart #second{
         line-height: 20px;
         margin-top: 5px;
+    }
+    
+    .mission {
+        margin:auto;
+        width:70%;
+        margin-left: -35%;
+        margin-top: -35vh;
     }
     
 }
