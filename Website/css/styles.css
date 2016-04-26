@@ -483,14 +483,14 @@ hr{
 .mission {
 /*    vertical-align: center;*/
     margin:auto;
-    height:62vh;
-    width:80vh;
+    height:450px;
+    width:550px;
     border:1px solid white;
     position:absolute;
     top:54%;
     left:50%;
-    margin-top:-31vh;
-    margin-left:-40vh;
+    margin-top:-225px;
+    margin-left:-275px;
     background-color: rgba(0,0,0,0.7);
     text-align:center;
     font-family:"Proxima Nova";
