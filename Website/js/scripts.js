@@ -30,7 +30,7 @@ function countup(yr,m,d,hr,min){ //Update the "shoes donated" as a fn of time
     var futurestring=(today.getTimezoneOffset()*(1000*60))-Date.parse(futurestring1);
     var dd=todaystring-futurestring;
     
-    var tare = 2921277318000 //Zeroing out
+    var tare = 2921387216000 //Zeroing out
 
     var shoes = Math.floor((dd-tare)/4000);
     
@@ -82,7 +82,7 @@ function generateShopItems(){
     for (var i=0; i<objects.length; i++){
         var cur = objects[i];
         var name = 'unit'+i;
-        out += '<div id="'+name+'" onmouseover="$(\'#'+name+' h1\').css(\'bottom\',\'0\'); " onmouseout="$(\'#'+name+' h1\').css(\'bottom\',\'-40px\');" onclick="saveShoe(\''+cur.name+'\', \''+cur.imageRef+'\', 1,'+cur.price+');" ><h1>Add to Cart $'+cur.price+'</h1> <img src="'+cur.imageRef+'"> </div>'
+        out += '<div id="'+name+'" style="cursor:pointer;" onmouseover="$(\'#'+name+' h1\').css(\'bottom\',\'0\'); " onmouseout="$(\'#'+name+' h1\').css(\'bottom\',\'-40px\');" onclick="saveShoe(\''+cur.name+'\', \''+cur.imageRef+'\', 1,'+cur.price+');" ><h1>Add to Cart $'+cur.price+'</h1> <img src="'+cur.imageRef+'"> </div>'
     }
     
     $("#shopping").html(out);
@@ -134,7 +134,7 @@ function updateCart(){
     if (cartStore == null){
         cartStore = "0";
         localStorage.setItem("cart",cartStore);
-        $("#items").html('<div class="button" onclick="emptyCart();">Checkout</div>');
+        $("#items").html('<div class="button" onclick="emptyCart();" style="cursor:pointer;">Checkout</div>');
         console.log("surprise! trap 0");
     }
     var itemCount = parseInt(cartStore.substr(0,1));
@@ -172,7 +172,7 @@ function updateCart(){
     }
     
     out += '<div id="filler"> <img src="images/shoe1.jpg" style="opacity:0;"> </div>'
-    out += '<div class="button" onclick="emptyCart();">Checkout - $'+total+'</div>';
+    out += '<div class="button" style="cursor:pointer;" onclick="emptyCart();">Checkout - $'+total+'</div>';
 
     $("#items").html(out);
 }
