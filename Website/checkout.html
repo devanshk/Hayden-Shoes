@@ -1,0 +1,71 @@
+<html lang="en">
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Suranna' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:500' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+        <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        
+        <script type="text/javascript">
+        $(function(){
+            countup(year,month,day,hour,minute);
+            updateCart();
+            populateCheckout();
+        });
+        </script>
+        
+    </head>
+
+    <body style="background-color:#e0e0e0;">
+        <!--Here's the navbar-->
+        <div id="header_wrapper" style="background:#eee; position:fixed; padding-bottom:20px;">
+            <div id="header" class="clearfix">
+                <ul>
+                    <li><a href="shop.html" style="color:black;">SHOP</a></li>
+                    <li><a class="logo_black" href="index.html"></a></li>
+                    <li><a href="mission.html" style="color:black;">MISSION</a></li>
+                    <li><a id="nav_cart" href="#" onclick="toggleCart();" style="color:black;"><div id="first">CART</div><div id="second" style="border-color:black;">5</div></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="checkout" style="padding-top:15vh;">
+            
+            <h1 style="padding-bottom: 0px;">Checkout</h1> <br><div class="hr"></div><br>
+            
+            <table style="margin:auto;" id="checkout_container">
+            </table>
+            
+            <p>Type a note that <br> the child will see</p>
+            <form>
+                <textarea name="child_note" id="childNote"></textarea>
+            </form>
+            <h1 id="checkout_total">Total: $110</h1>
+        </div>
+        <div class="button" style="font-size:1.4em; padding: 2vh; position:fixed; bottom:0;" onclick="emptyCart(); window.location.href = 'index.html';">Confirm Order</div>
+        
+        <div id="cart_sidebar">
+            <div id="cancel" onclick="toggleCart();">x</div>
+            <h1>SHOPPING CART</h1>
+            <div id="items">
+                
+                <center>
+                    <div id="explore_store" onmouseover="$('.underline_btn').css('width', '50%');" onmouseout="$('.underline_btn').css('width', '80%');">
+                        <a href="shop.html">Explore<br>The Store</a>
+                        <div class="underline_btn"></div>
+                     </div>
+                </center>
+                
+                <div id="filler">
+                    <img src="images/shoe1.jpg" style="opacity:0;">
+                </div>
+                
+                <div class="button">Checkout</div>
+                
+            </div>
+        </div>
+        <div id="darkness" onclick="toggleCart();"></div>
+        
+    </body>
+</html>

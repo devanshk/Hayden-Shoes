@@ -172,15 +172,68 @@ function updateCart(){
     }
     
     out += '<div id="filler"> <img src="images/shoe1.jpg" style="opacity:0;"> </div>'
-    out += '<div class="button" style="cursor:pointer;" onclick="emptyCart();">Checkout - $'+total+'</div>';
+    out += '<div class="button" style="cursor:pointer;" onclick="window.location.href = \'checkout.html\';">Checkout - $'+total+'</div>';
 
     $("#items").html(out);
+}
+
+function populateCheckout(){
+    var cartStore = localStorage.getItem("cart");
+    if (cartStore == null){
+        cartStore = "0";
+        localStorage.setItem("cart",cartStore);
+        $("#items").html('<div class="button" onclick="emptyCart();" style="cursor:pointer;">Checkout</div>');
+        console.log("surprise! trap 0");
+    }
+            
+    cartStore = cartStore.substr(1, cartStore.length-1);
+    
+    var out = "";
+    var total = 0;
+    
+    while (cartStore.indexOf("-") != -1){ //While there's still another new line
+        var line = cartStore.substring(0, cartStore.indexOf("-"));
+        console.log("trap 2 is\n"+line);
+        cartStore = cartStore.slice(cartStore.indexOf("-")+1, cartStore.length);
+        
+        var name = line.slice(0,line.indexOf(","))
+        line = line.substr(line.indexOf(",")+1, line.length-line.indexOf(","));
+        
+        var imageSrc = line.slice(0,line.indexOf(","))
+        line = line.substr(line.indexOf(",")+1, line.length-line.indexOf(","));
+        
+        var quantity = line.slice(0,line.indexOf(","));
+        line = line.substr(line.indexOf(",")+1, line.length-line.indexOf(","));
+        
+        var priceStr = line.slice(0,line.length);
+        line = line.substr(line.indexOf(",")+1, line.length-line.indexOf(","));
+        
+        var price = parseFloat(priceStr);
+        
+        out += '<tr><td align="right" width="25%;"><img src="'+imageSrc+'" height="150vh;"></td><td><h2>'+name+'<br>Count: '+quantity+'<br>Price: $'+price*parseInt(quantity)+'</h2></td></tr>'
+        
+        total += price*parseInt(quantity);
+        console.log("checkout cartStore is\n"+cartStore+"\n");
+        console.log("nextIndex is "+cartStore.indexOf("-"));
+    }
+    
+    $("#checkout_total").html("Total: $"+total);
+    $("#checkout_container").html(out);
 }
 
 
     
 //    Reference
     
+//<tr>
+//        <td align="right" width="25%;">
+//            <img src="images/shoe1.jpg" height="150vh;">
+//        </td>
+//        <td>
+//            <h2>The Solo<br>Count: 1<br>Price: $50</h2>
+//        </td>
+//    </tr>
+
 //    <div id="unit1" onmouseover="$('#unit1 h1').css('bottom','0'); " onmouseout="$('#unit1 h1').css('bottom','-40px');">
 //                <h1 onclick="saveShoe('The Original', 'images/shoe1.jpg', 3);">Add to Cart</h1>
 //                <img src="images/shoe1.jpg">

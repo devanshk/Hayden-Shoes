@@ -517,6 +517,92 @@ hr{
     height:auto;
 }
 
+.mission-body h2 a{
+    text-decoration: none;
+    color:white;
+}
+
+.mission-body h2 :hover{
+    text-decoration: none;
+    color:#ff085e;
+}
+
+/* people */
+.people-background{
+    /*background-image:url(data);*/
+    width:100%;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background: url(../images/mission_bg.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    margin:0 auto;
+    height:100vh;
+    -webkit-filter: brightness(55%);
+    filter: brightness(55%);
+}
+
+.people {
+/*    vertical-align: center;*/
+    margin:auto;
+    width:80vh;
+    border:1px solid white;
+    position:absolute;
+    top:54%;
+    left:50%;
+    margin-top:-31vh;
+    margin-left:-40vh;
+    background-color: rgba(0,0,0,0.7);
+    text-align:center;
+    font-family:"Proxima Nova";
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom: 15px;
+}
+
+.people-body{
+    color:white;
+    overflow-x:hidden;
+}
+.people-body h1 {
+    color: #ff085e;
+}
+
+.people-body h2 a{
+    text-decoration: none;
+    color:white;
+}
+
+.people-body h2 :hover{
+    text-decoration: none;
+    color:#ff085e;
+}
+
+.people img{
+    width: 100px;
+}
+
+/* footer */
+
+footer{
+    bottom:0;
+    width:100%;
+    position: fixed;
+    background-color: black;
+    color:white;
+    padding-top:30 px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family:"Proxima Nova";
+
+}
+
+footer a{
+    text-decoration: none;
+    color:white;
+}
+
 /* Bonus Utility Classes */
 .hr
 {
@@ -583,4 +669,50 @@ hr{
         margin-top: -35vh;
     }
     
+}
+
+#checkout h1 {
+    font-family: 'Proxima Nova';
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+table h2 {
+    font-family: 'Proxima Nova';
+    margin-left: 20px;
+}
+
+#checkout_unit img {
+    float:left;
+    margin-left: 6%;
+}
+
+#checkout_unit {
+    display:block;
+    width:100%;
+}
+
+table {
+    border-collapse: collapse;
+    margin:0% 10%;
+}
+
+table{
+    border: 3px solid #9a9a9a;
+}
+
+th, td {
+    border: 1px solid #afafaf ;
+}
+
+#checkout p {
+    text-align: center;
+    font-family: 'Proxima Nova';
+    font-size: 1.5em;
+}
+
+textarea {
+    width:40%;
+    height:15vh;
+    margin-left: 30%;
 }
